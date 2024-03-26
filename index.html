@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Details Form</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="./style.css">
+  
+  <style>
+
+.university-logo {
+      max-width: 100px;
+    }
+    
+
+   
+    .demo-page-content {
+      /* Add any additional styling for the demo-page-content if needed */
+      display: inline-block;
+      text-align: left;
+    }
+
+    /* Add any additional styling for the sections if needed */
+    section {
+      margin: 20px;
+    }
+
+    /* Add any additional styling for the nice-form-group if needed */
+    .nice-form-group {
+      margin-bottom: 15px;
+    }
+
+    /* Add any additional styling for the button if needed */
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body >
+  <div class="demo-page" >
+    
+    <main class="demo-page-content">
+      <section style="text-align: center;">
+        <div class="href-target" id="intro"></div>
+        <h1 class="package-name">
+          <div style="margin: 0 auto; width: 50%; "><img src="https://oaustech.edu.ng/images/oaustech-logo.png" alt="University Logo" class="university-logo"></div>
+          Student Details Form
+        </h1>
+        <p>
+          This form is to collect details for students in Computer Science department.
+        </p>
+      </section>
+
+      <section>
+        <div class="href-target" id="input-types"></div>
+        <h1>
+          Input Information
+        </h1>
+        <p>Input your details via the form below</p>
+        <p> Note: Verify details inputted before submitting. Correction of already submitted details would attract a fee of 5000 Naira. </p>
+
+        <form action="process_form.php" method="post">
+
+          <div class="nice-form-group">
+            <label>Student Name</label>
+            <input type="text" name="name" placeholder="Enter student name" />
+          </div>
+          <div class="nice-form-group">
+            <label>Student ID (Matric number)</label>
+            <input type="text" name="matric" placeholder="Enter Matric number" />
+          </div>
+
+          <div class="nice-form-group">
+            <label>Level</label>
+            <input type="text" name="level" placeholder="Enter student level" />
+          </div>
+
+          <div class="nice-form-group">
+            <label>Gender</label>
+            <select name="gender">
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="nice-form-group">
+            <label>Phone Number</label>
+            <input type="tel" name="phone" placeholder="Enter phone number" />
+          </div>
+          
+          <div class="nice-form-group">
+            <label>Email</label>
+            <input type="email" name="email" placeholder="Enter email" />
+          </div>
+
+          <div class="nice-form-group">
+            <label>CGPA (Cummulative Grade Point Average)</label>
+            <input type="text" name="cgpa" placeholder="Enter CGPA" />
+          </div>
+          <p></p>
+          <p></p>
+
+          <button style="background-color: #4CAF50; color: white; padding: 10px 15px; border: none; border-radius: 5px; cursor: pointer;" type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
+
+
